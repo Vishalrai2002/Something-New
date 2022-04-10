@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+// Taking Number or Size and string INPUT
+
+int main() {
+     int n;
+     cin>>n;
+     cin.get(); // Ignore the '\n' after taking input of number n
+     // we read the input pointer value but we did not store it anywhere, thus ignored
+
+     char a[1000];
+     for(int i=0;i<n;i++)
+     {
+         cin.getline(a,1000);
+         cout<<a<<endl;
+
+     }
+}
