@@ -6,6 +6,7 @@ using namespace std;
 int main() {
      int n;
      cin>>n;
+     cin.ignore(); // We can also use this for ignoring the '\n'
      cin.get(); // Ignore the '\n' after taking input of number n
      // we read the input pointer value but we did not store it anywhere, thus ignored
 
