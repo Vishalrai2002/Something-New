@@ -1,0 +1,28 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+
+// Remove Dupplicates
+
+void removedupplicates(char str[])
+{
+     int j=1 ,i=0;
+     int len=strlen(str);
+  while(j<len){
+            if(str[i]!=str[j])
+            {
+                i++;
+                str[i]=str[j];
+            }
+            j++;
+  }
+  // you can checkitout by using the comment on the below code
+  str[i+1]='\0'; // This is used to add the null character at the last
+
+}
+
+int main() {
+   char str[]="coodddingg";  
+   removedupplicates(str);
+   cout<<str<<endl;
+}
